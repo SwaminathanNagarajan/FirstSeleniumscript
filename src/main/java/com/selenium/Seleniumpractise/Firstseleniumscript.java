@@ -4,8 +4,7 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-//import org.testng.Assert;
-
+import org.testng.Assert;
 public class Firstseleniumscript {
 
 	public static void main(String[] args) {
@@ -22,18 +21,10 @@ public class Firstseleniumscript {
 		Button.click();
 		WebElement Button1 = driver.findElement(By.className("eKjLze"));
 		Button1.click();
-		String Actualtitle = driver.getTitle();
 		String Expectedtitle = "Unicorn Store - The best place to buy your favourite Apple Products | Apple Premium Reseller";
-		//Assert.assertEquals(Actualtitle,Expectedtitle);
-		if(Actualtitle.equals(Expectedtitle))
-		{
-			System.out.println("The actual and expected title are same....!");
-		}
-		else{
-			System.out.println("Error title not found...");
-		}
-		
-
+		String Actualtitle = driver.getTitle();
+		Assert.assertEquals(Actualtitle,Expectedtitle);
+		driver.quit();
 	}
-
+	
 }
