@@ -30,7 +30,7 @@ public class Firstseleniumscript {
 			System.out.println("The actual and expected title are same....!");
 		}
 		else{
-			System.out.println("The actual and expected title are not same....");
+			System.out.println("Error title not found...");
 		}
 		
 
