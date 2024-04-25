@@ -23,7 +23,16 @@ public class Firstseleniumscript {
 		Button1.click();
 		String Expectedtitle = "Unicorn Store - The best place to buy your favourite Apple Products | Apple Premium Reseller";
 		String Actualtitle = driver.getTitle();
+		System.out.println(Actualtitle);
 		Assert.assertEquals(Actualtitle,Expectedtitle);
+			//System.out.println("Expected title : " +Expectedtitle);
+			//System.out.println("Actual title : " +Actualtitle);
+			//System.out.println("The actual and expected title matches");
+		//}
+		//else {
+			//System.out.println("The actual and expected title doesn't match...!");
+		//}
+		
 		driver.quit();
 	}
 	

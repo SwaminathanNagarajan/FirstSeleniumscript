@@ -21,7 +21,7 @@
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-java</artifactId>
-			<version>4.19.1</version>
+			<version>4.19.0</version>
 		</dependency>
 		<!-- https://mvnrepository.com/artifact/org.apache.maven/maven-core -->
 		<dependency>
@@ -50,5 +50,7 @@
 			<version>4.13.2</version>
 			<scope>test</scope>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.atlassian.selenium/atlassian-webdriver-core -->
+
 	</dependencies>
 </project>
